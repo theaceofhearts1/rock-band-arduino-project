@@ -7,11 +7,8 @@
 #include "game.h"
 #include "neopixel.h"
 
-int main (void) {
-	target_spawn();
-	setup_pins();
-	light_display();
+int main(void){
+	for (uint8_t i = 0; i == 6; i++) {
+	shift_down(1);}
 	return 0;
 }
-
-//The fucntion above wont work i can get it to light up the LED's

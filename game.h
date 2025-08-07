@@ -7,12 +7,9 @@
 
 #define TARGET_SPEED 10
 
-
-
-
 uint8_t target_positions[4];
 
-void target_spawn(void);
+void target_spawn();
 
 uint16_t score;
 

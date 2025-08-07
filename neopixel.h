@@ -1,5 +1,3 @@
-#pragma once
-
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -11,6 +9,5 @@ void setup_pins(void);
 
 void shift_down(uint8_t target_number);
 
-void light_display(void);
+uint8_t display_length = 1;
 
-const uint8_t display_length;
