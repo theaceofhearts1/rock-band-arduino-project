@@ -8,5 +8,8 @@
 #include "neopixel.h"
 
 int main(void){
-
+level_start();
+while (1){
+run_game();
+	}
 }

@@ -4,6 +4,7 @@
 #include <avr/io.h>
 #include <stddef.h>
 #include <avr/pgmspace.h>
+#include "ws2812b.h"
 
 #define ROWS    10
 #define COLUMNS 10
@@ -17,7 +18,13 @@ uint8_t target_positions[4];
 
 void target_spawn();
 
+void level_start();
+
+void run_game();
+
 uint16_t score;
+
+bool golden;
 
 uint16_t target_amount;
 

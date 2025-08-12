@@ -5,7 +5,6 @@ CFLAGS += \
     -Wall \
     -Wextra \
 	-Werror \
-    -Wpedantic \
     -g \
     -mmcu=atmega328p \
     -std=gnu11 \
@@ -19,6 +18,10 @@ clean:
 
 main.elf: main.o game.o neopixel.o ws2812b.o
 	$(CC) $(CFLAGS) -o $@ $^
+
+%.o: %.S
+	$(CC) $(CFLAGS) -MM -MF $*.d $<
+	$(CC) $(CFLAGS) -c $<
 
 %.o: %.c
 	$(CC) $(CFLAGS) -MM -MF $*.d $<
