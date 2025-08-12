@@ -17,7 +17,7 @@ all: main.elf
 clean:
 	@rm -rvf *.d *.elf *.o
 
-main.elf: main.o game.o neopixel.o
+main.elf: main.o game.o neopixel.o ws2812b.o
 	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.c

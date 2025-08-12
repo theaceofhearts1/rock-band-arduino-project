@@ -5,9 +5,9 @@
 #include <stddef.h>
 #include <avr/pgmspace.h>
 
-void setup_pins(void);
+// void setup_pins(void);
 
-void shift_down(uint8_t target_number);
+// void shift_down(uint8_t target_number);
 
-uint8_t display_length = 1;
+// uint8_t display_length = 1;
 
